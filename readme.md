@@ -1,4 +1,4 @@
-#TEST Sample Code from Meeting Site
+#TESTed Sample Code from Meeting Site
 
 **HTML5, CSS, SASS/SCSS, JavaScript, jQuery, web standards**  
 [View Samples Online](http://joeoravec.com/sample-meeting-pages/ "Sample Meeting Pages")
