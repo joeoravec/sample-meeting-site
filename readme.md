@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 #Sample Code from Meeting Site
+=======
+<<<<<<< HEAD
+#TESTed Sample Code from Meeting Site
+=======
+#new testSample Code from Meeting Site
+>>>>>>> update readme
+>>>>>>> update readme
 
 **HTML5, CSS, SASS/SCSS, JavaScript, jQuery, web standards**  
 [View Samples Online](http://joeoravec.com/sample-meeting-pages/ "Sample Meeting Pages")
@@ -33,8 +41,7 @@ Paragraphs separated with spacer images:
 
 Non-semantic headers:
 
-    <img src="./images/spacer.gif" width=1 height=9><br>
-    <font id="boldtext">Discussion:</font><br>
+    <img src="./images/spacer.gif" width=1 height=9><br>    <font id="boldtext">Discussion:</font><br>
  
 Repeated `id` tags for bold and italic styles. Eg: 
  
