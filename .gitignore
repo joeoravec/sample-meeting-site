@@ -1,2 +1,14 @@
 
 .DS_Store
+
+meeting-site/css/basecss-clearfix.css
+
+meeting-site/css/meeting-colors.css
+
+meeting-site/css/meeting-figures.css
+
+meeting-site/css/meeting-mixins.css
+
+meeting-site/css/meeting-vslides.css
+
+*.scssc

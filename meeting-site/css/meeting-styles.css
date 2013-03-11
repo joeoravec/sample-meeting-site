@@ -1,8 +1,10 @@
+/* line 4, ../scss/meeting-styles.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
+/* line 7, ../scss/meeting-styles.scss */
 .bar-divider {
   height: 3px;
   max-width: 450px;
@@ -10,6 +12,7 @@ body {
   margin: 0 auto;
 }
 
+/* line 13, ../scss/meeting-styles.scss */
 .bold-text {
   font-family: arial, sans-serif;
   font-size: 12px;
@@ -17,6 +20,7 @@ body {
   font-style: normal;
 }
 
+/* line 16, ../scss/meeting-styles.scss */
 .ital-text {
   font-family: arial, sans-serif;
   font-size: 12px;
@@ -24,10 +28,12 @@ body {
   font-style: italic;
 }
 
+/* line 19, ../scss/meeting-styles.scss */
 .hidden {
   display: none;
 }
 
+/* line 22, ../scss/meeting-styles.scss */
 a.pdflink {
   background: url(images/pdficon.gif) no-repeat;
   padding-left: 20px;
@@ -36,26 +42,31 @@ a.pdflink {
 }
 
 /* PROGRAM BOOK */
+/* line 30, ../scss/meeting-styles.scss */
 #program-book {
   margin: 0;
   padding: 0;
   background: #f0f5fa;
   border: #00216d solid 2px;
 }
+/* line 34, ../scss/meeting-styles.scss */
 #program-book ul {
   margin: 0;
   padding-left: 5px;
   list-style-type: none;
 }
+/* line 38, ../scss/meeting-styles.scss */
 #program-book ul li {
   margin-left: 0;
   padding-left: 20px;
   padding-bottom: 0.8em;
   background: url("./images/bullet.gif") no-repeat;
 }
+/* line 44, ../scss/meeting-styles.scss */
 #program-book ul ul {
   list-style-type: none;
 }
+/* line 46, ../scss/meeting-styles.scss */
 #program-book ul ul li {
   margin-left: 0;
   padding-left: 14px;
@@ -63,6 +74,7 @@ a.pdflink {
   background: url("./images/bullet2.gif") no-repeat;
 }
 
+/* line 55, ../scss/meeting-styles.scss */
 #program-book-events {
   width: 46%;
   float: left;
@@ -70,10 +82,12 @@ a.pdflink {
   margin: 0;
   padding: 8px;
 }
+/* line 61, ../scss/meeting-styles.scss */
 #program-book-events a {
   font-size: 12px;
 }
 
+/* line 65, ../scss/meeting-styles.scss */
 #program-book-highlights {
   width: 50%;
   float: right;
@@ -81,11 +95,13 @@ a.pdflink {
   padding: 8px;
 }
 
+/* line 71, ../scss/meeting-styles.scss */
 .program-book-highlighted, .program-book-sponsors {
   margin: 0 auto;
   text-align: center;
 }
 
+/* line 77, ../scss/meeting-styles.scss */
 .meeting-content, .meeting-information {
   max-width: 945px;
   background: url("./images/eacademy.jpg") no-repeat white;
@@ -99,60 +115,74 @@ a.pdflink {
   text-decoration: none;
 }
 
+/* line 86, ../scss/meeting-styles.scss */
 .meeting-information {
   background: transparent;
   padding-top: 10px;
 }
 
+/* line 90, ../scss/meeting-styles.scss */
 .meeting-head {
   text-align: right;
 }
 
 /* SPECIAL COURSES STYLES */
+/* line 95, ../scss/meeting-styles.scss */
 .special-course {
   padding: 10px 3px 0;
 }
+/* line 101, ../scss/meeting-styles.scss */
 .special-course cite {
   font-size: 12px;
   font-weight: bold;
   font-style: italic;
 }
+/* line 104, ../scss/meeting-styles.scss */
 .special-course table {
   width: 100%;
   margin: 5px auto;
 }
+/* line 107, ../scss/meeting-styles.scss */
 .special-course table tr {
   background: #f0f5fa;
 }
+/* line 109, ../scss/meeting-styles.scss */
 .special-course table tr.no-handout {
   background: #e0cde6;
 }
+/* line 113, ../scss/meeting-styles.scss */
 .special-course table td {
   padding: 7px;
   border: #00216d solid 1px;
 }
+/* line 116, ../scss/meeting-styles.scss */
 .special-course table td.comp-time {
   min-width: 70px;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
 }
+/* line 121, ../scss/meeting-styles.scss */
 .special-course table td .comp-title {
   font-size: 12px;
   font-weight: bold;
 }
+/* line 124, ../scss/meeting-styles.scss */
 .special-course table td cite {
   font-family: arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: italic;
 }
+/* line 127, ../scss/meeting-styles.scss */
 .special-course table td p {
   margin: 1em 0 0;
 }
+/* line 129, ../scss/meeting-styles.scss */
 .special-course table td p:first-child {
   margin: 0;
 }
+/* line 136, ../scss/meeting-styles.scss */
 .special-course table td ul li {
   margin-left: 15px;
   padding: 2px;
@@ -161,47 +191,58 @@ a.pdflink {
 }
 
 /* COMPANION MEETING STYLES */
+/* line 149, ../scss/meeting-styles.scss */
 .companion-meeting {
   padding: 10px 3px 0;
 }
+/* line 151, ../scss/meeting-styles.scss */
 .companion-meeting ul {
   list-style-type: none;
   margin: 0;
   padding: 0 0 10px;
   border-top: 1px solid #00216d;
 }
+/* line 157, ../scss/meeting-styles.scss */
 .companion-meeting li {
   padding: 7px;
   background: #f0f5fa;
   border: #00216d solid 1px;
   border-top: none;
 }
+/* line 163, ../scss/meeting-styles.scss */
 .companion-meeting table {
   width: 100%;
   margin: 5px auto;
 }
+/* line 166, ../scss/meeting-styles.scss */
 .companion-meeting table tr {
   background: #f0f5fa;
 }
+/* line 168, ../scss/meeting-styles.scss */
 .companion-meeting table tr.no-handout {
   background: #e0cde6;
 }
+/* line 172, ../scss/meeting-styles.scss */
 .companion-meeting table td {
   padding: 7px;
   border: #00216d solid 1px;
 }
+/* line 175, ../scss/meeting-styles.scss */
 .companion-meeting table td p {
   margin: 1em 0 0;
 }
+/* line 177, ../scss/meeting-styles.scss */
 .companion-meeting table td p:first-child {
   margin: 0;
 }
+/* line 183, ../scss/meeting-styles.scss */
 .companion-meeting table td ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   border-top: none;
 }
+/* line 187, ../scss/meeting-styles.scss */
 .companion-meeting table td ul li {
   margin-left: 10px;
   padding: 2px;
@@ -209,40 +250,49 @@ a.pdflink {
   border: none;
 }
 
+/* line 198, ../scss/meeting-styles.scss */
 .companion-meeting-menu {
   padding: 10px;
 }
+/* line 200, ../scss/meeting-styles.scss */
 .companion-meeting-menu ul {
   width: 70%;
   margin: 0 auto;
   padding: 10px 0;
 }
+/* line 205, ../scss/meeting-styles.scss */
 .companion-meeting-menu li {
   padding-top: 6px;
 }
+/* line 208, ../scss/meeting-styles.scss */
 .companion-meeting-menu h3 {
   margin-bottom: 0;
 }
+/* line 210, ../scss/meeting-styles.scss */
 .companion-meeting-menu h3 + p {
   margin-top: 0;
 }
 
+/* line 216, ../scss/meeting-styles.scss */
 .comp-time {
   min-width: 55px;
 }
 
+/* line 219, ../scss/meeting-styles.scss */
 .comp-title, .comp-time {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
 }
 
+/* line 223, ../scss/meeting-styles.scss */
 .comp-subtitle {
   font-size: 11px;
   font-weight: bold;
   font-style: italic;
 }
 
+/* line 226, ../scss/meeting-styles.scss */
 .comp-topic {
   margin-left: 20px;
   margin-bottom: 10px;
@@ -250,6 +300,7 @@ a.pdflink {
   font-weight: bold;
 }
 
+/* line 231, ../scss/meeting-styles.scss */
 .comp-label {
   margin-left: 20px;
   float: left;
@@ -260,6 +311,7 @@ a.pdflink {
   font-style: normal;
 }
 
+/* line 238, ../scss/meeting-styles.scss */
 .comp-moderator {
   margin-left: 70px;
   margin-bottom: 10px;
@@ -268,11 +320,13 @@ a.pdflink {
   font-style: normal;
 }
 
+/* line 244, ../scss/meeting-styles.scss */
 .center-box {
   text-align: center;
   margin: 0 auto;
 }
 
+/* line 248, ../scss/meeting-styles.scss */
 .event-time-location {
   margin: 20px auto 20px;
   padding: 4px;
@@ -285,30 +339,37 @@ a.pdflink {
 }
 
 /* SPECIALTY CONFERENCE STYLES */
+/* line 262, ../scss/meeting-styles.scss */
 .specialty-conferences p {
   width: 85%;
   margin: 15px auto 40px;
 }
+/* line 266, ../scss/meeting-styles.scss */
 .specialty-conferences table {
   width: 85%;
   margin: 5px auto;
 }
+/* line 269, ../scss/meeting-styles.scss */
 .specialty-conferences table td {
   padding: 0 2px;
   width: 40%;
 }
+/* line 272, ../scss/meeting-styles.scss */
 .specialty-conferences table td:first-child {
   width: 20%;
 }
+/* line 276, ../scss/meeting-styles.scss */
 .specialty-conferences table thead {
   background: #d1e1f1;
   font-size: 12px;
   font-weight: bold;
 }
+/* line 279, ../scss/meeting-styles.scss */
 .specialty-conferences table thead td {
   padding: 3px 2px;
 }
 
+/* line 286, ../scss/meeting-styles.scss */
 .course-header {
   margin: 0 auto;
   font-family: arial, sans-serif;
@@ -316,6 +377,7 @@ a.pdflink {
   font-weight: bold;
   font-style: normal;
 }
+/* line 289, ../scss/meeting-styles.scss */
 .course-header h1 {
   text-align: center;
   color: #000000;
@@ -327,6 +389,7 @@ a.pdflink {
   text-decoration: none;
 }
 
+/* line 297, ../scss/meeting-styles.scss */
 .case-header {
   margin: 0 auto;
   font-family: arial, sans-serif;
@@ -334,6 +397,7 @@ a.pdflink {
   font-weight: bold;
   font-style: normal;
 }
+/* line 300, ../scss/meeting-styles.scss */
 .case-header h1 {
   text-align: center;
   color: #000000;
@@ -344,6 +408,7 @@ a.pdflink {
   line-height: 16px;
   text-decoration: none;
 }
+/* line 307, ../scss/meeting-styles.scss */
 .case-header h2 {
   text-align: center;
   font-family: arial, sans-serif;
@@ -351,6 +416,7 @@ a.pdflink {
   font-weight: bold;
   font-style: normal;
 }
+/* line 311, ../scss/meeting-styles.scss */
 .case-header h3 {
   text-align: center;
   font-family: arial, sans-serif;
@@ -358,6 +424,7 @@ a.pdflink {
   font-weight: bold;
   font-style: italic;
 }
+/* line 315, ../scss/meeting-styles.scss */
 .case-header p {
   text-align: center;
   color: #000000;
@@ -369,18 +436,21 @@ a.pdflink {
   text-decoration: none;
 }
 
+/* line 324, ../scss/meeting-styles.scss */
 .case-number {
   float: left;
   text-align: right;
   width: 100px;
 }
 
+/* line 329, ../scss/meeting-styles.scss */
 .case-title {
   margin-left: 105px;
   font-weight: normal;
   font-style: italic;
 }
 
+/* line 333, ../scss/meeting-styles.scss */
 .case-label {
   float: left;
   text-align: right;
@@ -389,6 +459,7 @@ a.pdflink {
   font-style: normal;
 }
 
+/* line 339, ../scss/meeting-styles.scss */
 .case-detail {
   margin-left: 160px;
   margin-bottom: 10px;
@@ -396,6 +467,7 @@ a.pdflink {
   font-style: normal;
 }
 
+/* line 344, ../scss/meeting-styles.scss */
 .case-panelist {
   margin-left: 160px;
   margin-bottom: 10px;
@@ -403,50 +475,60 @@ a.pdflink {
   font-style: italic;
 }
 
+/* line 349, ../scss/meeting-styles.scss */
 .case-menu cite, .case-panelist cite, .case-title cite {
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
 }
 
+/* line 352, ../scss/meeting-styles.scss */
 .case-navigation {
   margin: 15px auto 20px;
   text-align: center;
   width: 230px;
 }
+/* line 356, ../scss/meeting-styles.scss */
 .case-navigation div {
   border: #00216d solid 1px;
   padding: 2px 0;
   background: #f0f5fa;
 }
 
+/* line 363, ../scss/meeting-styles.scss */
 .spec-conf-handout {
   margin: 0 auto;
   max-width: 75%;
 }
 
+/* line 367, ../scss/meeting-styles.scss */
 .spec-conf-handout-listing {
   padding: 0 20px;
 }
+/* line 369, ../scss/meeting-styles.scss */
 .spec-conf-handout-listing ul {
   margin: 0;
   padding: 5px 0;
   list-style-type: none;
 }
+/* line 373, ../scss/meeting-styles.scss */
 .spec-conf-handout-listing ul li {
   margin-left: 0;
   padding-left: 20px;
   padding-bottom: 0.6em;
   background: url("./images/bullet.gif") no-repeat;
 }
+/* line 380, ../scss/meeting-styles.scss */
 .spec-conf-handout-listing ul li:first-child {
   background: transparent;
 }
+/* line 383, ../scss/meeting-styles.scss */
 .spec-conf-handout-listing ul li label {
   float: right;
   min-width: 250px;
   text-align: right;
 }
+/* line 388, ../scss/meeting-styles.scss */
 .spec-conf-handout-listing ul li b {
   text-align: center;
   font-family: arial, sans-serif;
@@ -455,25 +537,30 @@ a.pdflink {
   font-style: normal;
 }
 
+/* line 396, ../scss/meeting-styles.scss */
 .spec-day-menu {
   margin: 0 auto;
   max-width: 500px;
 }
 
+/* line 401, ../scss/meeting-styles.scss */
 .spec-day-menu-listing ul {
   margin: 0;
   padding: 5px 0;
   list-style-type: none;
 }
+/* line 405, ../scss/meeting-styles.scss */
 .spec-day-menu-listing ul li {
   margin-left: 0;
   padding: 3px 0;
 }
+/* line 408, ../scss/meeting-styles.scss */
 .spec-day-menu-listing ul li label {
   float: right;
   min-width: 250px;
   text-align: right;
 }
+/* line 413, ../scss/meeting-styles.scss */
 .spec-day-menu-listing ul li b {
   text-align: center;
   font-family: arial, sans-serif;
@@ -482,48 +569,56 @@ a.pdflink {
   font-style: normal;
 }
 
+/* line 421, ../scss/meeting-styles.scss */
 .comp-menu-navigation {
   margin: 10px auto 2px;
   padding: 0;
   text-align: center;
   display: inline-block;
 }
+/* line 426, ../scss/meeting-styles.scss */
 .comp-menu-navigation div {
   border: #00216d solid 1px;
   padding: 2px 0;
   background: #f0f5fa;
 }
 
+/* line 432, ../scss/meeting-styles.scss */
 .case-menu-navigation {
   margin: 10px auto 2px;
   padding: 0;
   text-align: center;
   width: 220px;
 }
+/* line 437, ../scss/meeting-styles.scss */
 .case-menu-navigation div {
   border: #00216d solid 1px;
   padding: 2px 0;
   background: #f0f5fa;
 }
 
+/* line 443, ../scss/meeting-styles.scss */
 .case-menu-navigation-bottom {
   margin: 10px 0 2px;
   padding: 0;
   text-align: left;
   width: 56px;
 }
+/* line 448, ../scss/meeting-styles.scss */
 .case-menu-navigation-bottom div {
   border: 0px;
   padding: 2px 0;
   background: transparent;
 }
 
+/* line 454, ../scss/meeting-styles.scss */
 .comp-menu-navigation ul, .case-menu-navigation-bottom ul, .case-menu-navigation ul, .case-navigation ul, .pdf-block ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+/* line 458, ../scss/meeting-styles.scss */
 .comp-menu-navigation li, .case-menu-navigation-bottom li, .case-menu-navigation li, .case-navigation li {
   margin: 0;
   padding: 0;
@@ -533,10 +628,12 @@ a.pdflink {
   overflow: hidden;
 }
 
+/* line 466, ../scss/meeting-styles.scss */
 .pdf-block {
   margin: 10px auto;
   text-align: center;
 }
+/* line 469, ../scss/meeting-styles.scss */
 .pdf-block li {
   padding: 2px 0;
   line-height: 15px;
@@ -547,14 +644,17 @@ a.pdflink {
   font-style: normal;
   text-decoration: none;
 }
+/* line 475, ../scss/meeting-styles.scss */
 .pdf-block li .pdf-block-emphasis {
   font-weight: bold;
 }
 
+/* line 480, ../scss/meeting-styles.scss */
 .case-bottom {
   float: right;
 }
 
+/* line 483, ../scss/meeting-styles.scss */
 .case-menu-bottom {
   margin: 5px;
   color: #000;
@@ -564,12 +664,14 @@ a.pdflink {
   font-style: normal;
 }
 
+/* line 488, ../scss/meeting-styles.scss */
 .case-instructions {
   max-width: 550px;
   margin: 0 auto 18px;
   text-align: center;
 }
 
+/* line 494, ../scss/meeting-styles.scss */
 .getaperio {
   margin: 0 auto;
   text-align: right;
@@ -579,11 +681,13 @@ a.pdflink {
   font-weight: bold;
   font-style: normal;
 }
+/* line 499, ../scss/meeting-styles.scss */
 .getaperio img {
   float: right;
   padding: 5px;
 }
 
+/* line 505, ../scss/meeting-styles.scss */
 .gethelp {
   line-height: 15px;
   color: #990027;
@@ -594,6 +698,7 @@ a.pdflink {
   text-decoration: none;
 }
 
+/* line 512, ../scss/meeting-styles.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -601,97 +706,109 @@ a.pdflink {
 }
 
 /* NAV BUTTON STYLES */
+/* line 519, ../scss/meeting-styles.scss */
 .sprites-casenav {
   background-image: url(./images/sprites_case_nav.png);
   background-color: transparent;
   background-repeat: no-repeat;
 }
 
+/* line 524, ../scss/meeting-styles.scss */
 a.nav-prev {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 76px;
   background-position: 0px 0px;
 }
+/* line 526, ../scss/meeting-styles.scss */
 a.nav-prev:hover {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 76px;
   background-position: -76px 0px;
 }
 
+/* line 530, ../scss/meeting-styles.scss */
 a.nav-cont {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 78px;
   background-position: -152px 0px;
 }
+/* line 532, ../scss/meeting-styles.scss */
 a.nav-cont:hover {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 78px;
   background-position: -230px 0px;
 }
 
+/* line 536, ../scss/meeting-styles.scss */
 a.nav-next {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 52px;
   background-position: -308px 0px;
 }
+/* line 538, ../scss/meeting-styles.scss */
 a.nav-next:hover {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 52px;
   background-position: -360px 0px;
 }
 
+/* line 542, ../scss/meeting-styles.scss */
 a.nav-additin {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 122px;
   background-position: -412px 0px;
 }
+/* line 544, ../scss/meeting-styles.scss */
 a.nav-additin:hover {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 122px;
   background-position: -534px 0px;
 }
 
+/* line 548, ../scss/meeting-styles.scss */
 a.nav-back {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 52px;
   background-position: -656px 0px;
 }
+/* line 550, ../scss/meeting-styles.scss */
 a.nav-back:hover {
   display: block;
   text-indent: -9999px;
-  background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
   height: 15px;
   width: 52px;
   background-position: -708px 0px;
 }
 
+/* line 555, ../scss/meeting-styles.scss */
 article {
   background: #f0f5fa;
   border: #00216d solid 1px;
@@ -704,6 +821,7 @@ article {
   font-style: normal;
   text-decoration: none;
 }
+/* line 563, ../scss/meeting-styles.scss */
 article h1 {
   margin: 0;
   padding: 0.5em 0;
@@ -713,6 +831,7 @@ article h1 {
   font-style: normal;
   text-align: center;
 }
+/* line 569, ../scss/meeting-styles.scss */
 article h2 {
   margin: 0;
   padding: 0;
@@ -721,6 +840,7 @@ article h2 {
   font-weight: bold;
   font-style: normal;
 }
+/* line 573, ../scss/meeting-styles.scss */
 article h3 {
   margin: 0;
   padding: 0;
@@ -729,6 +849,7 @@ article h3 {
   font-weight: bold;
   font-style: italic;
 }
+/* line 577, ../scss/meeting-styles.scss */
 article h4 {
   margin: 0;
   padding: 0;
@@ -737,6 +858,7 @@ article h4 {
   font-weight: normal;
   font-style: italic;
 }
+/* line 581, ../scss/meeting-styles.scss */
 article h5 {
   display: inline;
   font-family: arial, sans-serif;
@@ -744,6 +866,7 @@ article h5 {
   font-weight: bold;
   font-style: italic;
 }
+/* line 585, ../scss/meeting-styles.scss */
 article table {
   border: #00216d solid 1px;
   background: #f4f8ff;
@@ -756,24 +879,30 @@ article table {
   text-decoration: none;
   vertical-align: top;
 }
+/* line 593, ../scss/meeting-styles.scss */
 article table caption {
   font-size: 11px;
   font-weight: bold;
   text-align: left;
 }
+/* line 598, ../scss/meeting-styles.scss */
 article td {
   border: #00216d solid 1px;
   padding: 4px;
+  vertical-align: top;
 }
+/* line 603, ../scss/meeting-styles.scss */
 article thead td {
   font-weight: bold;
   text-align: center;
   background: #b7cfff;
 }
+/* line 609, ../scss/meeting-styles.scss */
 article.case-menu h1 {
   text-align: left;
   padding: 0.5em 0;
 }
+/* line 613, ../scss/meeting-styles.scss */
 article.case-menu h2 {
   padding: 0 0 0.5em;
   line-height: 16px;
@@ -784,18 +913,22 @@ article.case-menu h2 {
   font-size: 14px;
   text-decoration: none;
 }
+/* line 621, ../scss/meeting-styles.scss */
 article p {
   margin: 0 0 1.0em 0;
   padding: 0;
 }
+/* line 625, ../scss/meeting-styles.scss */
 article ol, article ul {
   margin: 1mm 0 1mm;
   padding-bottom: 1mm;
 }
+/* line 629, ../scss/meeting-styles.scss */
 article li {
   margin: 0 0 1mm;
 }
 
+/* line 633, ../scss/meeting-styles.scss */
 article p, article li, section p, section li {
   line-height: 15px;
   color: #000000;
@@ -806,6 +939,7 @@ article p, article li, section p, section li {
   text-decoration: none;
 }
 
+/* line 639, ../scss/meeting-styles.scss */
 section a, article a, article a:link, section a:visited, article a:visited {
   color: #007dbc;
   font-family: arial, sans-serif;
@@ -813,6 +947,7 @@ section a, article a, article a:link, section a:visited, article a:visited {
   text-decoration: none;
 }
 
+/* line 644, ../scss/meeting-styles.scss */
 section a:hover, article a:hover {
   color: #00aaff;
   font-family: arial, sans-serif;
@@ -820,6 +955,7 @@ section a:hover, article a:hover {
   text-decoration: underline;
 }
 
+/* line 650, ../scss/meeting-styles.scss */
 article.program-topics {
   background: #d1e1f1;
   border: #00216d solid 1px;
@@ -832,6 +968,7 @@ article.program-topics {
   font-style: normal;
   text-decoration: none;
 }
+/* line 658, ../scss/meeting-styles.scss */
 article.program-topics h1 {
   margin: 0;
   padding: 0.5em 0 0;
@@ -843,6 +980,7 @@ article.program-topics h1 {
   text-transform: uppercase;
   text-align: left;
 }
+/* line 666, ../scss/meeting-styles.scss */
 article.program-topics table {
   width: 100%;
   padding-left: 20px;
@@ -850,28 +988,188 @@ article.program-topics table {
   border-color: #d1e1f1;
   background: #d1e1f1;
 }
+/* line 672, ../scss/meeting-styles.scss */
 article.program-topics table tr {
   border: none;
   border-color: #d1e1f1;
 }
+/* line 676, ../scss/meeting-styles.scss */
 article.program-topics table td {
   border: none;
   border-color: #d1e1f1;
   vertical-align: top;
 }
+/* line 680, ../scss/meeting-styles.scss */
 article.program-topics table td.topic-day {
   font-family: arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   font-style: italic;
 }
+/* line 683, ../scss/meeting-styles.scss */
 article.program-topics table td.topic-time {
   width: 55px;
 }
+/* line 686, ../scss/meeting-styles.scss */
 article.program-topics table td.topic-room {
   width: 155px;
 }
 
+/* line 693, ../scss/meeting-styles.scss */
+article.disclosure-info {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 3px;
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+/* line 701, ../scss/meeting-styles.scss */
+article.disclosure-info table {
+  width: 100%;
+  background: #f0f5fa;
+  border: #00216d solid 1px;
+}
+/* line 705, ../scss/meeting-styles.scss */
+article.disclosure-info table tr {
+  border-color: #d1e1f1;
+}
+/* line 708, ../scss/meeting-styles.scss */
+article.disclosure-info table td {
+  border: #00216d solid 1px;
+  vertical-align: top;
+  font-family: arial, sans-serif;
+  font-size: 9px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 11px;
+}
+/* line 713, ../scss/meeting-styles.scss */
+article.disclosure-info table td.disc-number {
+  width: 75px;
+  text-align: center;
+}
+/* line 717, ../scss/meeting-styles.scss */
+article.disclosure-info table td.disc-name {
+  width: 105px;
+}
+/* line 721, ../scss/meeting-styles.scss */
+article.disclosure-info table thead td {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  background: #f0f5fa;
+}
+
+/* line 729, ../scss/meeting-styles.scss */
+article.program-outline {
+  background: #d1e1f1;
+  border: #00216d solid 1px;
+  max-width: 600px;
+  padding: 7px;
+  margin: 3px auto;
+  color: #000000;
+  text-decoration: none;
+}
+/* line 737, ../scss/meeting-styles.scss */
+article.program-outline h1 {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: underline;
+  border-top: 2px #00216d solid;
+  text-align: left;
+}
+/* line 743, ../scss/meeting-styles.scss */
+article.program-outline p.col-left {
+  width: 315px;
+  float: left;
+}
+/* line 747, ../scss/meeting-styles.scss */
+article.program-outline p.col-right {
+  width: 250px;
+  float: right;
+}
+/* line 751, ../scss/meeting-styles.scss */
+article.program-outline a {
+  font-size: 12px;
+}
+/* line 754, ../scss/meeting-styles.scss */
+article.program-outline ul {
+  margin: -7px 0 0;
+  padding: 0 0 0 5px;
+  list-style-type: none;
+}
+/* line 758, ../scss/meeting-styles.scss */
+article.program-outline ul li {
+  margin: 0;
+  padding: 0;
+}
+/* line 761, ../scss/meeting-styles.scss */
+article.program-outline ul li a {
+  font-size: 11px;
+}
+/* line 766, ../scss/meeting-styles.scss */
+article.program-outline .daily-room {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 770, ../scss/meeting-styles.scss */
+.recog-head {
+  text-align: center;
+}
+
+/* line 773, ../scss/meeting-styles.scss */
+.three-div-col, .two-div-col, .one-div-col {
+  padding: 0 10px;
+}
+
+/* line 776, ../scss/meeting-styles.scss */
+.three-div-col div {
+  width: 33.33%;
+  float: left;
+  margin-bottom: 1em;
+}
+
+/* line 782, ../scss/meeting-styles.scss */
+.two-div-col div {
+  width: 50%;
+  float: left;
+  margin-bottom: 1em;
+}
+
+/* line 788, ../scss/meeting-styles.scss */
+.one-div-col div {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* line 793, ../scss/meeting-styles.scss */
+div.col-left {
+  text-align: left;
+}
+
+/* line 796, ../scss/meeting-styles.scss */
+div.col-center {
+  text-align: center;
+}
+
+/* line 799, ../scss/meeting-styles.scss */
+div.col-right {
+  text-align: right;
+}
+
+/* line 804, ../scss/meeting-styles.scss */
 section.case-summary:after {
   display: block;
   content: "";
@@ -880,17 +1178,20 @@ section.case-summary:after {
   background: url(./images/bar.jpg) no-repeat transparent;
   margin: 15px auto;
 }
+/* line 812, ../scss/meeting-styles.scss */
 section.case-summary:last-of-type:after {
   background: transparent;
 }
 
 /* FIGURE STYLES */
+/* line 3, ../scss/meeting-figures.scss */
 figure {
   margin: 0 auto;
   padding: 10px;
   float: left;
   text-align: left;
 }
+/* line 8, ../scss/meeting-figures.scss */
 figure img {
   border: 0;
   -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
@@ -898,18 +1199,22 @@ figure img {
   margin-bottom: 5px;
 }
 
+/* line 15, ../scss/meeting-figures.scss */
 .four-fig-col figure {
   width: 22%;
 }
 
+/* line 18, ../scss/meeting-figures.scss */
 .three-fig-col figure {
   width: 22%;
 }
 
+/* line 22, ../scss/meeting-figures.scss */
 .two-fig-col figure {
   width: 22%;
 }
 
+/* line 26, ../scss/meeting-figures.scss */
 figcaption {
   text-align: left;
   line-height: 15px;
@@ -921,6 +1226,7 @@ figcaption {
 }
 
 /* VIRTUAL SLIDE STYLES */
+/* line 6, ../scss/meeting-vslides.scss */
 .virtual-slide {
   width: 30%;
   margin: 10px;
@@ -935,10 +1241,12 @@ figcaption {
   font-style: normal;
   text-decoration: none;
 }
+/* line 16, ../scss/meeting-vslides.scss */
 .virtual-slide img.vslide {
   margin: 0 auto;
   border: #333333 solid 1px;
 }
+/* line 20, ../scss/meeting-vslides.scss */
 .virtual-slide p {
   margin: 0 auto;
   padding: 0;
@@ -946,58 +1254,71 @@ figcaption {
   font-size: 12px;
   font-weight: bold;
 }
+/* line 25, ../scss/meeting-vslides.scss */
+.virtual-slide p span {
+  font-size: 11px;
+  font-weight: normal;
+}
+/* line 30, ../scss/meeting-vslides.scss */
 .virtual-slide ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+/* line 34, ../scss/meeting-vslides.scss */
 .virtual-slide li {
   margin: 0;
   padding: 2px 0 2px 20px;
   display: list-item;
 }
+/* line 38, ../scss/meeting-vslides.scss */
 .virtual-slide li.aperio {
   background: url(images/aperio.gif) no-repeat;
 }
+/* line 41, ../scss/meeting-vslides.scss */
 .virtual-slide li.webviewer {
   background: url(images/webviewer.gif) no-repeat;
 }
 
 /* FOOTNOTES */
+/* line 822, ../scss/meeting-styles.scss */
 #hoverfootnote {
   position: absolute;
-  top: 70px;
-  left: 10px;
+  top: -500px;
+  left: -500px;
   padding: 6px;
   border: #333333 solid 1px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  /* future proofing */
   background: #eee;
   max-width: 350px;
   opacity: .9;
   line-height: 15px;
   color: #000000;
+  display: none;
   font-family: verdana, arial, sans-serif;
   font-size: 10px;
   font-weight: normal;
   font-style: normal;
 }
+/* line 838, ../scss/meeting-styles.scss */
 #hoverfootnote p {
   color: #a00000;
   padding: 0;
   margin: 1em 0 0;
 }
 
+/* line 845, ../scss/meeting-styles.scss */
 ol.footnotes {
-  margin-top: 1em;
+  margin-top: 0.25em;
   margin-bottom: 1em;
   list-style-type: decimal;
   padding-left: 2.5em;
 }
 
 /* CLEARFIX */
+/* line 3, ../scss/basecss-clearfix.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1006,10 +1327,12 @@ ol.footnotes {
   /* 2 */
 }
 
+/* line 8, ../scss/basecss-clearfix.scss */
 .clearfix:after {
   clear: both;
 }
 
+/* line 11, ../scss/basecss-clearfix.scss */
 .clearfix {
   *zoom: 1;
 }

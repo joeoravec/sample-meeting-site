@@ -53,7 +53,7 @@ $family-serif-antiqua: "book antiqua", "times new roman", serif;
 @mixin sprite-nav-button($width, $offX, $offY) {
     display:block;
     text-indent:-9999px;
-    background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+    background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
     height: 15px;
     width: $width;
     background-position: $offX $offY;
