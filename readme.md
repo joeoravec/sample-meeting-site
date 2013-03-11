@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 #Sample Code from Meeting Site
-=======
-<<<<<<< HEAD
-#TESTed Sample Code from Meeting Site
-=======
-#new testSample Code from Meeting Site
->>>>>>> update readme
->>>>>>> update readme
-=======
-#Sample Code from Meeting Site
->>>>>>> Initial sample files
 
 **HTML5, CSS, SASS/SCSS, JavaScript, jQuery, web standards**  
 [View Samples Online](http://joeoravec.com/sample-meeting-pages/ "Sample Meeting Pages")

@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Sample Code from Meeting Site</title>
+
+</head>
+<body>
+<h1>Sample Code from Meeting Site</h1>
+
+<p><strong>HTML5, CSS, SASS/SCSS, JavaScript, jQuery, web standards</strong><br/>
+<a href="http://joeoravec.com/sample-meeting-pages/" title="Sample Meeting Pages">View Samples Online</a></p>
+
+<h3>Files Included in this Repo</h3>
+
+<ul>
+<li>Sample “legacy” code</li>
+<li>3-4 page types
+
+<ul>
+<li>Content page</li>
+<li>Course page</li>
+<li>“S” Conference menu page</li>
+<li>“S” Conference detail page</li>
+<li>“C” Meeting handout page</li>
+</ul>
+</li>
+<li>sass code</li>
+<li>js code</li>
+</ul>
+
+
+<h3>Description</h3>
+
+<p>Completed through a subcontracting (client-of-a-client) arrangement, this project involved bringing the pages for the end client's annual meeting a little closer to better web practice with HTML5, CSS/SASS, web standards, and unobtrusive JavaScript.</p>
+
+<p> <em>(For clarity, I'll refer to my client as <strong>project head</strong> and the client's client as <strong>end client</strong>.)</em></p>
+
+<h3>Starting Point</h3>
+
+<p>For a variety of reasons, the project head has stuck with <em>old</em> HTML: think spacer images, tables as layout, and <code>&lt;font&gt;</code> tags. Yikes.</p>
+
+<p>A few specific examples:</p>
+
+<p>Paragraphs separated with spacer images:</p>
+
+<pre><code>&lt;br&gt;
+&lt;img src="./images/spacer.gif" width=1 height=9&gt;
+&lt;br&gt;
+</code></pre>
+
+<p>Non-semantic headers:</p>
+
+<pre><code>&lt;img src="./images/spacer.gif" width=1 height=9&gt;&lt;br&gt;
+&lt;font id="boldtext"&gt;Discussion:&lt;/font&gt;&lt;br&gt;
+</code></pre>
+
+<p>Repeated <code>id</code> tags for bold and italic styles. Eg:</p>
+
+<pre><code>&lt;font id="italictext"&gt;for emphasis&lt;/font&gt;
+</code></pre>
+
+<p>Intrusive Javascript, with content from elsewhere on the page duplicated within the function call. For footnotes:</p>
+
+<pre><code>onMouseOver="return footnoteFunction('&lt;font id=boldtext&gt;Reference #1 - &lt;/font&gt;Author, N. Article Title.  &lt;font id=\'italictext\'&gt;Journal Name&lt;/font&gt;. pub date and page.&lt;br&gt;&lt;img src=\'./images/spacer.gif\' width=1 height=5&gt;&lt;br&gt;&lt;font color=a00000&gt;Click now to navigate to reference section, then Back Button to return here.&lt;/font&gt;')"
+</code></pre>
+
+<h3>A Leap Forward</h3>
+
+<p>Semantic tags</p>
+
+<p>Removed redundant code</p>
+
+<p>jQuery/javascript</p>
+
+<p>CSS -- SASS</p>
+
+<h3>For Further Improvement</h3>
+
+<p>Description, including ideas for improvements (remove frames, proper article use, oocss, js/css processing/minification)</p>
+</body>
+</html>
