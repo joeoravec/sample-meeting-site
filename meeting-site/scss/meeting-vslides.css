@@ -1,0 +1,46 @@
+/* VIRTUAL SLIDE STYLES */
+.virtual-slide {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  background: #dae7f3;
+  line-height: 15px;
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+.virtual-slide img.vslide {
+  margin: 0 auto;
+  border: #333333 solid 1px;
+}
+.virtual-slide p {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.virtual-slide p span {
+  font-size: 11px;
+  font-weight: normal;
+}
+.virtual-slide ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.virtual-slide li {
+  margin: 0;
+  padding: 2px 0 2px 20px;
+  display: list-item;
+}
+.virtual-slide li.aperio {
+  background: url(images/aperio.gif) no-repeat;
+}
+.virtual-slide li.webviewer {
+  background: url(images/webviewer.gif) no-repeat;
+}

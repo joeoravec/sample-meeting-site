@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Sample Code from Meeting Site
 =======
 <<<<<<< HEAD
@@ -7,17 +8,21 @@
 #new testSample Code from Meeting Site
 >>>>>>> update readme
 >>>>>>> update readme
+=======
+#Sample Code from Meeting Site
+>>>>>>> Initial sample files
 
 **HTML5, CSS, SASS/SCSS, JavaScript, jQuery, web standards**  
 [View Samples Online](http://joeoravec.com/sample-meeting-pages/ "Sample Meeting Pages")
 
 ### Files Included in this Repo
-* Sample "legacy" code
+* Sample “legacy” code
 * 3-4 page types
   * Content page
-  * Spec Conf menu page
-  * Spec Conf Detail page
-  * Comp Mtg handout page
+  * Course page
+  * “S” Conference menu page
+  * “S” Conference detail page
+  * “C” Meeting handout page
 * sass code
 * js code 
  
@@ -25,11 +30,11 @@
 
 Completed through a subcontracting (client-of-a-client) arrangement, this project involved bringing the pages for the end client's annual meeting a little closer to better web practice with HTML5, CSS/SASS, web standards, and unobtrusive JavaScript.
 
- _(For clarity, I'll refer to my client as **lead developer** and the client's client as **end client**.)_
+ _(For clarity, I'll refer to my client as **project head** and the client's client as **end client**.)_
  
 ###Starting Point
 
-For a variety of reasons, the lead developer for this project has stuck with *old* HTML: think spacer images, tables as layout, and `<font>` tags. Yikes.
+For a variety of reasons, the project head has stuck with *old* HTML: think spacer images, tables as layout, and `<font>` tags. Yikes.
 
 A few specific examples:
 
@@ -63,4 +68,4 @@ CSS -- SASS
 
 ###For Further Improvement
 
-Description, including ideas for improvements (remove frames, proper article use, oocss)
+Description, including ideas for improvements (remove frames, proper article use, oocss, js/css processing/minification)

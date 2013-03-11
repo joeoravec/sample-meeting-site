@@ -1,0 +1,60 @@
+// FONTS
+
+$family-sans-arial: arial,sans-serif;
+$family-sans-verdana: verdana,arial,sans-serif;
+
+$family-serif-georgia: Georgia, "Times New Roman", Times, serif;
+$family-serif-antiqua: "book antiqua", "times new roman", serif;
+
+@mixin font-sans($family: $family-sans-arial, $weight: normal, $style: normal, $size: 12px) {
+	@if $family == verdana {
+		$family: $family-sans-verdana;
+	}
+	font: {
+		@if $family != none {
+			family: $family;
+		}	
+		@if $size != none {
+			size: $size;
+		}		
+		@if $weight != none {
+			weight: $weight;
+		}
+		@if $style != none {
+			style: $style;
+		}
+	}
+}
+
+@mixin font-serif($family: $family-serif-georgia, $weight: normal, $style: normal, $size: 12px) {
+	@if $family == antiqua {
+		$family: $family-serif-antiqua;
+	}
+	font: {
+		family: $family;
+		weight: $weight;
+		style: $style;
+		size: $size;
+	}
+}
+
+// BORDERS 
+@mixin basic-border($color: $mainAccent, $width: 1px) {
+	border: $color solid $width;
+}
+
+// MARGINS & PADDINGS
+@mixin no-margin-padding() {
+	margin: 0;
+    padding: 0;
+}
+
+// SPRITES
+@mixin sprite-nav-button($width, $offX, $offY) {
+    display:block;
+    text-indent:-9999px;
+    background: url(./images/sprites_case_nav.png) 0 0 no-repeat;
+    height: 15px;
+    width: $width;
+    background-position: $offX $offY;
+}
