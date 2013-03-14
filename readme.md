@@ -6,10 +6,9 @@
 ### Files Included in this Repo
 * Sample “legacy” code
 * 3-4 page types
-  * Content page
   * Course page
   * “S” Conference menu page
-  * “S” Conference detail page
+  * [“S” Conference detail page](http://www.joeoravec.com/sample-meeting-site/meeting-site/s-conf-detail.htm "S-Conference Detail Page")
   * “C” Meeting handout page
 * sass code
 * js code 

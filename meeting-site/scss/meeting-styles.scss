@@ -7,7 +7,7 @@
   .bar-divider {
     height: 3px;
     max-width: 450px;
-    background: url(./images/bar.jpg) no-repeat #ffffff;
+    background: url(../images/bar.jpg) no-repeat #ffffff;
     margin: 0 auto;
   }
   .bold-text {
@@ -20,7 +20,7 @@
     display: none;
   }
   a.pdflink {
-    background: url(images/pdficon.gif) no-repeat;
+    background: url(../images/pdficon.gif) no-repeat;
     padding-left: 20px;
     padding-top: 2px;
     @include font-sans($style: none, $family: none, $weight: none, $size: 13px);
