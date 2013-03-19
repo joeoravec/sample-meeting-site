@@ -25,58 +25,23 @@
     padding-top: 2px;
     @include font-sans($style: none, $family: none, $weight: none, $size: 13px);
   }
-
-/* PROGRAM BOOK */  
-  #program-book {
-    @include no-margin-padding();
-    background: $mainContentBg;
-    @include basic-border($width: 2px);
-    ul {
-      margin: 0;
-      padding-left: 5px;
-      list-style-type: none; 
-      li {
-        margin-left: 0;
-        padding-left: 20px;
-        padding-bottom: 0.8em;
-        background:url('./images/bullet.gif') no-repeat;
-      }
-      ul {
-        list-style-type: none;
-        li {
-          margin-left: 0;
-          padding-left: 14px;
-          padding-bottom: 0.2em;
-          background:url('./images/bullet2.gif') no-repeat;
-        }
-      }
-    }
-  }
-  #program-book-events {
-    width: 46%;
-    float: left;
-    border-right: 1px solid $mainAccent;
-    margin: 0;
-    padding: 8px;
-    a {
-      @include font-sans($style: none, $family: none, $weight: none);
-    }
-  }
-  #program-book-highlights {
-    width: 50%;
-    float: right;
-    margin: 0;
-    padding: 8px;
-  }
-  .program-book-highlighted, .program-book-sponsors {
-    margin: 0 auto;
+  .center-box {
     text-align: center;
+    margin: 0 auto;
   }
-
+  .event-time-location {
+    margin: 20px auto 20px;
+    padding: 4px;
+    @include basic-border();
+    background: $eventsBg;
+    text-align: center;
+    display: inline-block;
+    @include font-sans($style: none, $family: none, $weight: bold);
+  }
 
   .meeting-content, .meeting-information {
     max-width: 945px;
-    background: url('./images/eacademy.jpg') no-repeat #ffffff;
+    background: url('http://placehold.it/940x55') no-repeat #ffffff;
     padding-top: 55px;
     line-height:15px; 
     color:#000000; 
@@ -105,9 +70,9 @@
       width: 100%;
       margin: 5px auto;
       tr {
-        background: #f0f5fa;
+        background: $meetingRowBg;
         &.no-handout {
-          background: #e0cde6;
+          background: $meetingRowNoHandoutBg;
         }
       }
       td {
@@ -164,9 +129,9 @@
       width: 100%;
       margin: 5px auto;
       tr {
-        background: #f0f5fa;
+        background: $meetingRowBg;
         &.no-handout {
-          background: #e0cde6;
+          background: $meetingRowNoHandoutBg;
         }
       }
       td {
@@ -191,24 +156,6 @@
             border: none;
           }
         }
-      }
-    }
-  }
-
-  .companion-meeting-menu {
-    padding: 10px;
-    ul {
-      width: 70%;
-      margin: 0 auto;
-      padding: 10px 0;
-    }
-    li {
-      padding-top: 6px;
-    }
-    h3 {
-      margin-bottom: 0;
-      + p {
-        margin-top: 0;
       }
     }
   }
@@ -240,22 +187,6 @@
     margin-bottom: 10px; 
     @include font-sans($family: none);
   }
-
-  .center-box {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .event-time-location {
-    margin: 20px auto 20px;
-    padding: 4px;
-    @include basic-border();
-    background: $eventsBg;
-    text-align: center;
-    display: inline-block;
-    @include font-sans($style: none, $family: none, $weight: bold);
-  }
-
-
 
 /* SPECIALTY CONFERENCE STYLES */
   .specialty-conferences {
@@ -380,31 +311,6 @@
         &:first-child {
         background: transparent;
         }
-        label {
-          float: right;
-          min-width: 250px;
-          text-align: right;
-        }        
-        b {
-          text-align: center;
-          @include font-sans($weight: bold, $size: 12px);
-        }
-      }
-    }
-  }
-
-  .spec-day-menu {
-    margin: 0 auto;
-    max-width: 500px;
-  }
-  .spec-day-menu-listing {    
-    ul {
-      margin: 0;
-      padding: 5px 0;
-      list-style-type: none; 
-      li {
-        margin-left: 0;
-        padding: 3px 0;
         label {
           float: right;
           min-width: 250px;
@@ -647,126 +553,6 @@
     text-decoration:underline;
   }
 
-  article.program-topics {
-    background: $eventsBg;
-    @include basic-border();
-    padding: 10px;
-    margin: 3px;
-    color:#000000; 
-    @include font-sans($family: verdana, $size: 11px);
-    text-decoration:none;  
-    h1 {
-      margin: 0;
-      padding: 0.5em 0 0;
-      @include font-sans($weight: bold, $size: 14px);
-      color: #000070;
-      text-transform: uppercase;
-      text-align: left;
-    }
-    table {
-      width: 100%;
-      padding-left: 20px;
-      border: none;
-      border-color:  $eventsBg;
-      background: $eventsBg;    
-      tr {
-        border: none;
-        border-color:  $eventsBg;
-      } 
-      td {
-        border: none;
-        border-color:  $eventsBg;
-        vertical-align: top;
-        &.topic-day {
-          @include font-sans($weight: bold, $size: 12px, $style: italic);
-        }
-        &.topic-time {
-          width: 55px;
-        }
-        &.topic-room {
-          width: 155px;
-        }
-      } 
-    }
-  }
-
-  article.disclosure-info {
-    background: transparent;
-    border: none;
-    padding: 0;
-    margin: 3px;
-    color:#000000; 
-    @include font-sans($family: verdana, $size: 11px);
-    text-decoration:none;  
-    table {
-      width: 100%;
-      background: $mainContentBg;
-      @include basic-border(); 
-      tr {
-        border-color:  $eventsBg;
-      } 
-      td {
-        @include basic-border();
-        vertical-align: top;  
-        @include font-sans($size: 9px);
-        line-height: 11px;
-        &.disc-number {
-          width: 75px;
-          text-align: center;
-        }
-        &.disc-name {
-          width: 105px;
-        }
-      }
-      thead td {
-        @include font-sans($weight: bold, $size: 12px);
-        text-align: center;
-        background: $mainContentBg;
-      }
-    }
-  }
-
-  article.program-outline {
-    background: $eventsBg;
-    @include basic-border(); 
-    max-width: 600px;
-    padding: 7px;
-    margin: 3px auto;
-    color:#000000; 
-    text-decoration:none;  
-    h1 {
-        @include font-sans($weight: bold, $size: 12px);
-        text-decoration: underline;
-        border-top: 2px $mainAccent solid;
-        text-align: left;
-    }
-    p.col-left {
-      width: 315px;
-      float: left;
-    }
-    p.col-right {
-      width: 250px;
-      float: right;
-    }      
-    a {
-      font-size: 12px;
-    }
-    ul {
-      margin: -7px 0 0;
-      padding: 0 0 0 5px;
-      list-style-type: none; 
-      li {
-        margin: 0;
-        padding: 0;           
-        a {
-          font-size: 11px;
-        }
-      }
-    }
-    .daily-room {
-      @include font-sans($style: italic, $size: 12px);
-    }
-  }
   .recog-head {
     text-align: center;
   }
@@ -814,9 +600,8 @@
     }
   }
 
-@import "meeting-figures";
-
-@import "meeting-vslides";
+/* FIGURES */
+  @import "meeting-figures";
 
 /* FOOTNOTES */
   #hoverfootnote {
@@ -849,4 +634,5 @@
     padding-left: 2.5em;
   }
 
-@import "basecss-clearfix";
+/* CLEARFIX */
+  @import "basecss-clearfix";

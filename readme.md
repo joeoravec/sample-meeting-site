@@ -4,12 +4,12 @@
 [View Samples Online](http://joeoravec.com/sample-meeting-pages/ "Sample Meeting Pages")
 
 ### Files Included in this Repo
-* Sample “legacy” code
+* ~~Sample “legacy” code~~ (forthcoming)
 * 3-4 page types
-  * Course page
-  * “S” Conference menu page
+  * [Course page](http://www.joeoravec.com/sample-meeting-site/meeting-site/course.htm "Course Page")
+  * [“S” Conference menu page](http://www.joeoravec.com/sample-meeting-site/meeting-site/s-conf-menu.htm "S-Conference Menu Page")
   * [“S” Conference detail page](http://www.joeoravec.com/sample-meeting-site/meeting-site/s-conf-detail.htm "S-Conference Detail Page")
-  * “C” Meeting handout page
+  * [“C” Meeting handout page](http://www.joeoravec.com/sample-meeting-site/meeting-site/c-meeting.htm "C-Meeting Handout Page")
 * sass code
 * js code 
  

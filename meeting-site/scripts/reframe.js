@@ -1,0 +1,1 @@
+/* Placeholder for a framing script */

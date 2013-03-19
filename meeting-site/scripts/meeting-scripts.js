@@ -38,26 +38,18 @@
         });
 
         // handle figures
-        /*
-        $('.parnav').on('click', function(e) {
-            e.preventDefault();
-            var thisfigid = $(this).closest('figure').data('figureId');
-            parnav(thisfigid);
-        });
-*/
-
-        // handle figures
         $('.parnav').on('click', function(e) {
             e.preventDefault();
             var thisfigid = $(this).closest('figure').data('figureId');
             var thisfighref = $(this).attr('href').replace('.jpg','');
-            var thisfigdesc = $(this).closest('figure').find('figcaption').text()
+            var thisfigdesc = $(this).closest('figure').find('figcaption').text();
             thisfigdesc = $.trim(thisfigdesc);
-            
+
             var slidenum = thisfighref.substr(thisfighref.lastIndexOf("/")+1);
             var desc = thisfigdesc;
 
-            myslidepop(dir,desc,slidenum)
+            console.log("call myslidepop: " + dir + ", " + desc + ", " + slidenum);
+            //myslidepop(dir,desc,slidenum);
         });
 
         // handle vslide web viewer links
@@ -71,7 +63,8 @@
             e.preventDefault();
             var thisItinItem = $(this).data('itinItem');
             var thisItinParam = itineraryArray[thisItinItem];
-            addrecord(thisItinParam.mtgid, thisItinParam.datestr, thisItinParam.st, thisItinParam.et, thisItinParam.wd, thisItinParam.evt, thisItinParam.room, thisItinParam.crs, thisItinParam.yesno, thisItinParam.conflict);
+            console.log("call addrecord: " + thisItinParam.mtgid + ", " + thisItinParam.datestr + ", " +  thisItinParam.st + ", " +  thisItinParam.et + ", " +  thisItinParam.wd + ", " +  thisItinParam.evt + ", " +  thisItinParam.room + ", " +  thisItinParam.crs + ", " +  thisItinParam.yesno + ", " +  thisItinParam.conflict);
+            //addrecord(thisItinParam.mtgid, thisItinParam.datestr, thisItinParam.st, thisItinParam.et, thisItinParam.wd, thisItinParam.evt, thisItinParam.room, thisItinParam.crs, thisItinParam.yesno, thisItinParam.conflict);
         });
 
 
