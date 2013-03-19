@@ -17,7 +17,7 @@ Links included below point to the pages on the sample site:
  
 ## Project Description
 
-Completed through a subcontracting (client-of-a-client) arrangement, this project involved bringing the pages for the end client's annual meeting a little closer to better web practice with HTML5, CSS/SASS, web standards, and unobtrusive JavaScript.
+Completed through a subcontracting (client-of-a-client) arrangement, this project involved bringing the pages for the end client's annual meeting a little closer to better web practice with HTML5, CSS/SASS, web standards, and unobtrusive JavaScript. **The files included here are provided as samples of this standards-based coding practice** and are not intended to reflect my design direction (as all design choices were provided by the project head or by other parties).
 
  _(For clarity, I'll refer to my client as **project head** and the client's client as **end client**.)_
  
@@ -45,7 +45,10 @@ Repeated `id` tags for bold and italic styles. Eg:
     
 Intrusive Javascript, with content from elsewhere on the page duplicated within the function call. For footnotes:
 
-    onMouseOver="return footnoteFunction('<font id=boldtext>Reference #1 - </font>Author, N. Article Title.  <font id=\'italictext\'>Journal Name</font>. pub date and page.<br><img src=\'./images/spacer.gif\' width=1 height=5><br><font color=a00000>Click now to navigate to reference section, then Back Button to return here.</font>')"
+    onMouseOver="return footnoteFunction('<font id=boldtext>Reference #1 - </font>
+    Author, N. Article Title.  <font id=\'italictext\'>Journal Name</font>. pub date and page.
+    <br><img src=\'./images/spacer.gif\' width=1 height=5><br>
+    <font color=a00000>Click now to navigate to reference section, then Back Button to return here.</font>')"
 
 
 ### A Leap Forward
