@@ -153,26 +153,27 @@ pre code {
 <p><strong>HTML5, CSS, SASS/SCSS, JavaScript, jQuery, web standards</strong><br/>
 <a href="http://joeoravec.com/sample-meeting-pages/" title="Sample Meeting Pages">View Samples Online</a></p>
 
-<h3>Files Included in this Repo</h3>
+<h2>Files Included in this Repo</h2>
+
+<p>Links included below point to the pages on the sample site:</p>
 
 <ul>
-<li>Sample “legacy” code</li>
+<li><del>Sample “legacy” code</del> (forthcoming)</li>
 <li>3-4 page types
 
 <ul>
-<li>Content page</li>
-<li>Course page</li>
-<li>“S” Conference menu page</li>
-<li>“S” Conference detail page</li>
-<li>“C” Meeting handout page</li>
+<li><a href="http://www.joeoravec.com/sample-meeting-site/meeting-site/course.htm" title="Course Page">Course page</a></li>
+<li><a href="http://www.joeoravec.com/sample-meeting-site/meeting-site/s-conf-menu.htm" title="S-Conference Menu Page">“S” Conference menu page</a></li>
+<li><a href="http://www.joeoravec.com/sample-meeting-site/meeting-site/s-conf-detail.htm" title="S-Conference Detail Page">“S” Conference detail page</a></li>
+<li><a href="http://www.joeoravec.com/sample-meeting-site/meeting-site/c-meeting.htm" title="C-Meeting Handout Page">“C” Meeting handout page</a></li>
 </ul>
 </li>
-<li>sass code</li>
-<li>js code</li>
+<li>SASS code (SCSS, compiled as expanded, development CSS)</li>
+<li>Javascript code</li>
 </ul>
 
 
-<h3>Description</h3>
+<h2>Project Description</h2>
 
 <p>Completed through a subcontracting (client-of-a-client) arrangement, this project involved bringing the pages for the end client's annual meeting a little closer to better web practice with HTML5, CSS/SASS, web standards, and unobtrusive JavaScript.</p>
 
@@ -200,6 +201,8 @@ pre code {
 <p>Repeated <code>id</code> tags for bold and italic styles. Eg:</p>
 
 <pre><code>&lt;font id="italictext"&gt;for emphasis&lt;/font&gt;
+…
+&lt;font id="italictext"&gt;again, on same page&lt;/font&gt;
 </code></pre>
 
 <p>Intrusive Javascript, with content from elsewhere on the page duplicated within the function call. For footnotes:</p>
@@ -209,16 +212,90 @@ pre code {
 
 <h3>A Leap Forward</h3>
 
-<p>Semantic tags</p>
+<p><strong>Semantic tags:</strong> The most obvious and major change was a move to more semantic markup.</p>
 
-<p>Removed redundant code</p>
+<ul>
+<li>Headers are identified using appropriate tags (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.) rather than just styled for presentation.</li>
+<li>Similarly, paragraphs are tagged with actual <code>&lt;p&gt;</code> tags instead of using <code>&lt;br&gt;</code> and spacer images to separate paragraphs.</li>
+<li>Outdated tags (eg, <code>&lt;font&gt;</code>) were removed, and <code>id</code> attributes, where used, appear only once per document.</li>
+<li>New HMTL5 tags were employed where appropriate, including <code>&lt;section&gt;</code> for distinct sections, <code>&lt;article&gt;</code> for main content, <code>&lt;header&gt;</code> for page headers, <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for figures within articles, and <code>&lt;nav&gt;</code> for navigation elements.</li>
+</ul>
 
-<p>jQuery/javascript</p>
 
-<p>CSS -- SASS</p>
+<p><strong>CSS &amp; SASS:</strong> Finally, the project head embracing &mdash; or at least, accepting &mdash; abandoning <code>&lt;table&gt;</code> cells for page layout!</p>
+
+<ul>
+<li>Layout/presentation was moved from HTML to CSS.</li>
+<li>Taking matters even further, I used SASS (specifically, SCSS) for even more efficiency:
+
+<ul>
+<li>Nesting selectors in SCSS to streamline coding the styles &mdash; it's much clearer this way, too.</li>
+<li>variables for colors, font names, etc., such as:
+
+<ul>
+<li><code>$mainAccent: #00216d;</code></li>
+<li><code>$family-serif-georgia: Georgia, "Times New Roman", Times, serif;</code></li>
+</ul>
+</li>
+<li>@mixins created to handling fonts, borders, margins, and sprites:</li>
+</ul>
+</li>
+</ul>
+
+
+<p>A sample of a @mixin for sprites:</p>
+
+<pre><code>@mixin sprite-nav-button($width, $offX, $offY) {
+  display:block;
+  text-indent:-9999px;
+  background: url(../images/sprites_case_nav.png) 0 0 no-repeat;
+  height: 15px;
+  width: $width;
+  background-position: $offX $offY;
+}
+</code></pre>
+
+<ul>
+<li>To future-proof any conversion to a fluid layout and mobile devices, <code>max-width</code> and percentage width values were used throughout.</li>
+</ul>
+
+
+<p><strong>Removed redundant code:</strong></p>
+
+<ul>
+<li>Footnotes were streamlined. Using jQuery, the reference footnote text is read and display from the footnote itself and is not copied into every link to that footnote. For example, this link's hover: <br/>
+<code>[&lt;a href="#ref7"  class="referencelink" data-reference="ref7"&gt;7&lt;/a&gt;]</code> <br/>
+reads and displays the text from this footnote:<br/>
+<code>&lt;li id="ref7"&gt;Earl Wayland Bowman. The Ramblin' Kid. Here is some further details about this resource, pp. 102-109.&lt;/li&gt;</code></li>
+<li>jQuery was also used to display duplicate navigation at the bottom of those pages where it was previously included in the code twice.</li>
+</ul>
+
+
+<p><strong>jQuery/Javascript:</strong> In addition to the enhancements noted above, scripts were created to allow the obtrusive code to be removed. An example of the updated figures:</p>
+
+<pre><code>&lt;figure data-figure-id="18"&gt;
+  &lt;a href="image18.jpg" class="parnav"&gt;&lt;img src="http://placehold.it/110x83" alt="" /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;
+    &lt;a href="image18.jpg" class="parnav"&gt;Item 0 - Figure 1&lt;/a&gt;&lt;br/&gt;
+    The pale Usher—threadbare in coat, heart, body, and brain; I see him now.
+  &lt;/figcaption&gt;                             
+&lt;/figure&gt;
+</code></pre>
+
+<p>See the file scripts/meeting-scripts.js for the new code.</p>
+
+<p>To the extent possible, fallback was also provided for users who might visit the pages without javascript. In the figure example above, such users would simply link directly to the full-size image; previously, the <code>href</code> for these images pointed to a javascript functions that would fail entirely if the user's browser was not so enabled.</p>
 
 <h3>For Further Improvement</h3>
 
-<p>Description, including ideas for improvements (remove frames, proper article use, oocss, js/css processing/minification)</p>
+<p>Though much better and standards-compliant, there are still opportunities for further improvement. Lessons learned along the way, and areas that remain off-limits for change:</p>
+
+<ul>
+<li><p><strong>Remove frames.</strong> The site as a whole continues to be presented in an outdated frameset. As development on that frameset is performed in part by other parties, the frames remain in place for the immediate future and couldn't be altered or reworked as part of this project, limiting among other things the ability to present the meeting content responsively.</p></li>
+<li><p><strong>Proper <code>&lt;article&gt;</code> usage.</strong> My initial pass through the new pages placed the main text for each content page in <code>&lt;article&gt;</code> tags; however, the title and author/presenter information appeared before this article section of the page. A better practice would be to include this title and author information inside the <code>&lt;article&gt;</code> tags -- possibly with some reworking of how the local navigation and supporting text are presented.</p></li>
+<li><p><strong>OOCSS.</strong> I could have better employed some of OOCSS principles. For example, in a handful of instances I defined headings (eg, <code>&lt;h1&gt;</code>) to appear differently within <code>&lt;article&gt;</code> tags than they appear elsewhere on the page. This issue would be better addressed by reworking the entire meeting page layouts from scratch -- with an overarching heading scheme -- rather than reimplementing the outdated layouts.</p></li>
+<li><p><strong>JS/CSS Preprocessing/Minification</strong>. The javascript and the stylesheets could benefit from preprocessing to combine multiple files and minify for production.</p></li>
+</ul>
+
 </body>
 </html>
