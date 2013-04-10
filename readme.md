@@ -1,7 +1,7 @@
 #Sample Code from Meeting Site
 
 **HTML5, CSS, SASS/SCSS, JavaScript, jQuery, web standards**  
-[View Samples Online](http://joeoravec.com/sample-meeting-pages/ "Sample Meeting Pages")
+[View Samples Online](http://joeoravec.com/sample-meeting-site/ "Sample Meeting Pages")
 
 ## Files Included in this Repo
 Links included below point to the pages on the sample site:
@@ -35,7 +35,8 @@ Paragraphs separated with spacer images:
 
 Non-semantic headers:
 
-    <img src="./images/spacer.gif" width=1 height=9><br>    <font id="boldtext">Discussion:</font><br>
+    <img src="./images/spacer.gif" width=1 height=9><br>
+    <font id="boldtext">Discussion:</font><br>
  
 Repeated `id` tags for bold and italic styles. Eg: 
  
@@ -78,7 +79,8 @@ A sample of a @mixin for sprites:
       height: 15px;
       width: $width;
       background-position: $offX $offY;
-    }    
+    }
+    
 * To future-proof any conversion to a fluid layout and mobile devices, `max-width` and percentage width values were used throughout.
     
 **Removed redundant code:**
